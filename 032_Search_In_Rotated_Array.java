@@ -1,7 +1,7 @@
 public class Solution {
     public int search(int[] A, int target) {
         int left = 0, right = A.length - 1;
-        while (left < right) {
+        while (left <= right) {
             int mid = (left + right) / 2;
             if (A[mid] == target)
                 return mid;
@@ -16,7 +16,7 @@ public class Solution {
             } else {
                 if (A[mid] < A[left]) {
                     right = mid - 1;
-                } else if (A[mid] > A[left] && A[left] < target) {
+                } else if (A[mid] > A[left] && A[left] <= target) {
                     right = mid - 1;
                 } else {
                     left = mid + 1;

@@ -1,4 +1,4 @@
-public class solution{
+class solution{
 	public int searchInsert(int[] A, int target) {
 		if (target < A[0])
 			return 0;
