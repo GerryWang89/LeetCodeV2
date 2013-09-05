@@ -17,4 +17,4 @@ public class Solution {
             sum += prices[prices.length-1] - curBuy;
         return sum;
     }
-}
+}
